@@ -258,9 +258,12 @@
          background-image:
         linear-gradient(to right, #131222e1),
         url("../images/bg-img5.jpg");
-        height: 205vh;
+        height: 172vh;
         background-size: 100% 100%;
         padding-left: 10px;
+    }
+    .copyright {
+        font-size: 15px;
     }
     .footer-section>.row>div {
         margin-top: 20px;
