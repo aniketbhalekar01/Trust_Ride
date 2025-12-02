@@ -100,15 +100,15 @@
 }
 
 .footer-section {
-    height: 350px;
     background-image:
         linear-gradient(to right, #131222e1),
         url("../images/bg-img4.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    padding: 20px 50px;
+    background-repeat: no-repeat;
+    padding: 40px 50px;  
 }
+
 
 .footer-section .logo {
     height: 100px;
@@ -239,34 +239,31 @@
 .contact span:hover {
     background-color: #FFB51D;
 }
+
 .footer-section li a {
     transition: color 0.2s linear;
 }
+
 .footer-section li a:hover {
     color: #FFB51D;
 }
+
 .copyright {
     color: #fff;
     margin-top: 30px;
+
 }
+
 .trust-ride-copy {
     color: #FFB51D;
 }
 
 @media(max-width:576px) {
     .footer-section {
-         background-image:
-        linear-gradient(to right, #131222e1),
-        url("../images/bg-img5.jpg");
-        height: 172vh;
-        background-size: 100% 100%;
-        padding-left: 10px;
+        background-image:
+            linear-gradient(to right, #131222e1),
+            url("../images/bg-img5.jpg");
+        padding: 30px 15px;   
+        height: auto;         
     }
-    .copyright {
-        font-size: 15px;
-    }
-    .footer-section>.row>div {
-        margin-top: 20px;
-    }
-    
 }
