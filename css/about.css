@@ -36,7 +36,7 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../images/bg-img5.jpg);
+    url(../images/about-img.jpg);
   height: 400px;
   width: 100%;
   background-size: cover;
@@ -91,10 +91,8 @@
   }
 }
 .car-slider{
-  position: relative;
+  position: absolute;
 
   border: 1px solid #fff;
 }
-.car-slider .img-fluid{
-  position: absolute;
-}
+
