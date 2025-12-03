@@ -1,42 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
-    background-color: #fff;
-    font-weight: 600;
-    font-size: 19px;
-    height: 100px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 19px;
+  height: 100px;
 }
 
 .navbar-brand img {
-    height: 250px;
+  height: 250px;
 }
 
 .nav-link {
-    transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .nav-link:hover {
-    color: #FFB51D;
+  color: #FFB51D;
 
 }
 
 .nav-link {
-    margin-right: 5px;
+  margin-right: 5px;
 }
+
 /* navbar end */
 
 .car-image {
   position: relative;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
+      rgba(0, 0, 0, 0.4)),
     url(../images/about-img.jpg);
   height: 400px;
   width: 100%;
@@ -46,6 +45,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .car-image .about {
   text-align: center;
   padding: 20px;
@@ -78,6 +78,7 @@
   font-weight: bolder;
   color: #ffb51d;
 }
+
 @media (max-width: 768px) {
   .container {
     height: 300px;
@@ -91,15 +92,17 @@
     font-size: 16px;
   }
 }
-.car-slider{
+
+.car-slider {
   position: absolute;
- overflow: hidden;
+  overflow: hidden;
   width: 100%;
   left: 0px;
   bottom: 0px;
 
 }
-.car-slider img{
+
+.car-slider img {
   top: 38px;
   height: 210px;
   width: 30vw;
@@ -107,13 +110,15 @@
   min-width: 180px;
   position: relative;
   left: 0px;
-   animation: drive 8s linear infinite;
+  animation: drive 8s linear infinite;
 }
+
 @keyframes drive {
-  from{
-    left:0;
+  from {
+    left: 0;
   }
-  to{
-    left:1500px;
+
+  to {
+    left: 1500px;
   }
 }
