@@ -1,0 +1,51 @@
+/* Main slider container */
+.testimonial-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* moving track */
+.testimonial-track {
+    display: flex;
+    gap: 20px;
+    animation: slideLeft 30s linear infinite;
+}
+
+/* individual card */
+.testimonial-card {
+    min-width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Quote icon */
+.quote-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fdbb0a;
+    color: #000;
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 6px 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Rating star */
+.stars {
+    color: #fdbb0a;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Animation right to left */
+@keyframes slideLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
