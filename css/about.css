@@ -14,6 +14,7 @@
 
 .navbar-brand img {
     height: 250px;
+    margin-top: 20px;
 }
 
 .nav-link {
@@ -61,23 +62,6 @@
   margin-top: 50px;
 }
 
-.car-image .about p {
-  color: white;
-  font-size: 21px;
-  letter-spacing: 1px;
-  margin-top: 10px;
-}
-
-.car-image .about p a {
-  text-decoration: none;
-  color: white;
-}
-
-.bi-chevron-right {
-  font-size: 17px;
-  font-weight: bolder;
-  color: #ffb51d;
-}
 @media (max-width: 768px) {
   .container {
     height: 300px;
@@ -85,11 +69,7 @@
 
   .container .about h1 {
     font-size: 32px;
-  }
-
-  .container .about p {
-    font-size: 16px;
-  }
+  } 
 }
 .car-slider{
   position: absolute;
@@ -116,4 +96,68 @@
   to{
     left:1500px;
   }
+}
+
+/* about details */
+
+.about-detail{
+  position: relative;
+  width: 100%;
+  height: 900px;
+  display: flex;
+}
+
+/* div 1 */
+.about-detail .images{
+  position: relative;
+  border: 1px solid #333;
+  height: 850px;
+  width: 50%;
+  padding: 120px;
+}
+.images .front-img{
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  z-index: 2;
+  border-radius: 25px;
+}
+.images .back-img{
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  z-index: 1;
+  border-radius: 25px;
+}
+.images .animat-car{
+  position: absolute;
+  top: 450px;
+  left:420px ;
+
+}
+
+
+/* div2 */
+.about-detail .trust-ride{
+  position: relative;
+  border: 1px solid #333;
+  height: 850px;
+  width: 50%;
+}
+.trust-ride .car-logo{
+  border: 1px solid #333;
+  top: 100px;
+  left: 80px;
+  width: 620px;
+  position: absolute;
+}
+.trust-ride .car-logo span{
+  color: #FFB51D;
+  font-weight: 400;
+}
+.trust-ride .car-logo h1{
+  font-size: 50px;
+  font-weight:700 ;
+  color: black;
+  
 }
