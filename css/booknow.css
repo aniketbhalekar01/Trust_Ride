@@ -1,0 +1,44 @@
+body {
+  background: #f4f6f9;
+  font-family: "Poppins", sans-serif;
+}
+.banner {
+  background: url(../images/bg-img3.jpg)center/cover no-repeat;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}
+@media(max-width:576px){
+      .banner {
+        height: 50vh;
+      }
+      .booking-card {
+        position: relative;
+        top: 100px;
+      }
+}
+  
+
+.booking-card {
+  max-width: 700px;
+  margin: -200px auto 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.form-label {
+  font-weight: 500;
+}
+.btn-custom {
+  background: #ff6b00;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-custom:hover {
+  background: #e86405;
+}
