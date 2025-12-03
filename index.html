@@ -45,7 +45,7 @@
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    
+
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -118,7 +118,7 @@
         <section>
             <div class="container-fluid">
                 <div class="row fun-facts">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <div class=" car-heading">
                             <img src="images/car-logo.png" alt="car logo">
                             <h4>FUN FACTS</h4>
@@ -132,7 +132,7 @@
                             multipy a green form lesser
                         </P>
                         <div class="about-rent-service row">
-                            <div class="box orange col-12 col-md-6">
+                            <div class="box orange col-12 col-md-6 col-lg-6">
                                 <span>
                                     <i class="fa-solid fa-car-rear"></i>
                                 </span>
@@ -164,19 +164,53 @@
 
                         </div><!--About Rent Service close-->
                     </div><!--first col-md-6 close-->
-                    <div class="col-md-6 car-driver-img">
+                    <div class="col-md-6 col-lg-6 car-driver-img">
                         <img src="images/car1.jpg" alt="" class="car1">
                         <img src="images/driver.jpg" alt="" class="driver">
-                        
+
                     </div>
-                  
+
                 </div> <!--row/fun fact close-->
             </div> <!--Container fluid close-->
         </section>
 
         <section class="more-about">
-            <div class="container">
-                
+            <div class="container-fluid more-about-img d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center">Want To Know More About?</h2>
+                <h2 class="text-center">Play Our Promotional Video Now!</h2>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning play-btn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <iframe width="85%" height="315"
+                                            src="https://www.youtube.com/embed/uJY63jqTdd4?si=s0j7RESFEz8INxib"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                            class="vid"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
