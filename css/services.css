@@ -3,37 +3,45 @@ h3{
     color: orange;
     font-weight: 400px;
 }
+*{
+    font-family: "Roboto", sans-serif;
+}
 h1{
     text-align: center;
     font-weight: 400px;
    
 }
 .cont{
-    background-color: rgb(241, 195, 110);
+    background-color:#FFB51D;
     width: 100%;
-    height: 100px;
+    height: 130px;
+    
 }
 h4{
     text-align: center;
+    padding: 10px;
    
 }
 marquee{
-    background-color: rgb(243, 200, 119);
+    background-color: #FFB51D;
     height: 50px;
     font-size: 25px;
-    display: flex;
-    align-items: center;
+    position: relative;
+    top: 100px;
+   
    
 }
-.card{
-    background-color: rgb(235, 206, 148);
-    height: 200px;
-    width: 250px;
-    text-align: center;
-    
+footer{
+    position: relative;
+    top: 100px;
 }
+section{
+    position: relative;
+    top: 100px;
+}
+
 .card:hover{
-    background-color: orange;
+    background-color: #FFB51D;
 }
 .card-title{
     text-align: center;
@@ -54,7 +62,7 @@ body {
 }
 
 /* Geometric background shapes */
-.service-card::before {
+/* .service-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -65,7 +73,7 @@ body {
                       linear-gradient(225deg, transparent 30%, #1f202b 30%);
     opacity: 0.5;
     z-index: 0;
-}
+} */
 
 /* Number box */
 .number-box {
@@ -83,28 +91,25 @@ body {
 /* Icon */
 .icon {
     font-size: 45px;
-    color: #ffb300;
+    color: white;
     margin-bottom: 20px;
     z-index: 3;
     position: relative;
+    
+    
+}
+.icon .image{
+    height: 40px;
+    width: 40px;
 }
 
-/* Yellow Circle */
-.circle {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #ffb300;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    z-index: 3;
-    position: relative;
-}
+
 
 /* Title */
 .title {
     font-size: 22px;
     font-weight: 700;
-    color: #ffb300;
+    color:#FFB51D;
     margin-bottom: 10px;
     z-index: 3;
     position: relative;
@@ -113,7 +118,7 @@ body {
 /* Description */
 .desc {
     font-size: 15px;
-    color: #dcdcdc;
+    color: #868689;
     z-index: 3;
     position: relative;
 }
@@ -126,7 +131,7 @@ body {
     left: 0;
     width: 100%;
     height: 10px;
-    background: #ffb300;
+    background: #FFB51D;
     border-radius: 0 0 25px 25px;
 }
 /* Hover Effect */
@@ -143,7 +148,7 @@ body {
 
 /* Yellow bottom bar on hover */
 .service-card:hover::after {
-    background: #ffcc33;
+    background:#FFB51D;
 }
 
 /* Icon hover */
