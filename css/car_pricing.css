@@ -1,0 +1,10 @@
+.price-card{
+     background: #13141c;
+    border-radius: 25px;
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 500;
+}

@@ -5,42 +5,59 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .navbar {
   background-color: #fff;
   font-weight: 600;
-  font-size: 19px;
-  height: 100px;
+  font-size: 18px;
+  min-height: 100px;
 }
 
 .navbar-brand img {
   height: 250px;
-}
-
-.nav-link {
-  transition: color 0.5s;
-}
-
-.nav-link:hover {
-  color: #FFB51D;
-
+  max-width: 100%;
 }
 
 .nav-link {
   margin-right: 5px;
+  transition: color 0.3s ease;
 }
 
-/* navbar end */
+.nav-link:hover {
+  color: #ffb51d;
+}
+
+/* Mobile navbar */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 15px;
+    min-height: auto;
+  }
+
+  .navbar-brand img {
+    height: 60px;
+  }
+}
+
 
 .car-image {
   position: relative;
-  background-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)),
-    url(../images/about-img.jpg);
-  height: 400px;
   width: 100%;
+  min-height: 400px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/about-img.jpg);
+
   background-size: cover;
   background-position: center;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,76 +66,238 @@
 .car-image .about {
   text-align: center;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   max-width: 600px;
 }
 
 .car-image .about h1 {
   color: white;
   font-size: 50px;
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
-.car-image .about p {
+.car-image .about {
   color: white;
-  font-size: 21px;
-  letter-spacing: 1px;
-  margin-top: 10px;
+  font-size: 20px;
 }
-
-.car-image .about p a {
+/* 
+.car-image .about a {
   text-decoration: none;
   color: white;
-}
+} */
 
-.bi-chevron-right {
-  font-size: 17px;
-  font-weight: bolder;
+/* .bi-chevron-right {
+  font-size: 16px;
+  font-weight: bold;
   color: #ffb51d;
-}
+} */
 
+/* ✅ Banner Responsive */
 @media (max-width: 768px) {
-  .container {
-    height: 300px;
+  .car-image {
+    min-height: 280px;
   }
 
-  .container .about h1 {
+  .car-image .about h1 {
     font-size: 32px;
   }
 
-  .container .about p {
-    font-size: 16px;
+  .car-image .about p {
+    font-size: 15px;
   }
 }
 
 .car-slider {
   position: absolute;
-  overflow: hidden;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  left: 0px;
-  bottom: 0px;
-
+  overflow: hidden;
 }
 
 .car-slider img {
-  top: 38px;
-  height: 210px;
-  width: 30vw;
+  position: absolute;
+  bottom: 0;
+  left: -40%;
+  height: 200px;
+  width: auto;
   max-width: 400px;
-  min-width: 180px;
-  position: relative;
-  left: 0px;
-  animation: drive 8s linear infinite;
+  min-width: 150px;
+  animation: drive 16s linear infinite;
 }
 
 @keyframes drive {
   from {
-    left: 0;
+    left: -30%;
   }
 
   to {
-    left: 1500px;
+    left: 100%px;
+  }
+}
+
+
+/* Mobile car size */
+@media (max-width: 768px) {
+  .car-slider img {
+    height: 120px;
+  }
+}
+
+
+.img-text{
+  border: 1px solid;
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.img-text .left{
+  
+  height: 600px;
+  width: 700px;
+  min-width: 300px;
+  min-height: 400px;
+  background-color: #fff;
+  padding: 25px;
+
+}
+
+.img-text .right{
+  width: 700px;
+  height: 600px;
+  min-width: 300px;
+  min-height: 400px;
+}
+@media (max-width: 768px) {
+  .img-text {
+    flex-direction: column;
+  }
+
+  .img-text .left,
+  .img-text .right {
+    width: 100%;
+    min-height: auto;
+  }
+}
+.about-right{
+  max-width: 700px;
+  height: 599px;
+  padding: 30px;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.about-heading{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffb400;
+  font-weight: 600;
+}
+
+.about-heading .icon{
+  height: 19px;
+  margin-top: 10px;
+}
+
+.about-right h1{
+  font-size: 40px;
+  font-weight: 900;
+  margin: 15px 0;
+  margin-right: 30px;
+  color: #111;
+}
+
+.highlight{
+  color: #ffb400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.para{
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Skill bar */
+
+.skill{
+  margin: 20px 0;
+}
+
+.skill-top{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.progress{
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.progress-fill{
+  height: 100%;
+  background: #ffb400;
+  border-radius: 10px;
+}
+
+.p90{ width: 90%; }
+.p70{ width: 70%; }
+
+/* Button + Call */
+
+.btn-area{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.read-btn{
+  background: #ffb400;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.call-box{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.call-icon{
+  background: #ffb400;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .about-right h1{
+    font-size: 28px;
+  }
+
+  .btn-area{
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

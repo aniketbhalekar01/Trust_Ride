@@ -238,7 +238,7 @@ body {
   min-width: 180px;
   position: relative;
   left: 0px;
-  animation: drive 8s linear infinite;
+  animation: drive 16s linear infinite;
 }
 
 @keyframes drive {
@@ -287,5 +287,7 @@ body {
         right: 1650px;
     }
 }
+
+
 
 
