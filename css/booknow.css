@@ -34,11 +34,11 @@ body {
   font-weight: 500;
 }
 .btn-custom {
-  background: #ff6b00;
+  background: #fff;
   border: none;
   font-size: 18px;
   font-weight: 600;
 }
 .btn-custom:hover {
-  background: #e86405;
+  background: #FFB51D;
 }
