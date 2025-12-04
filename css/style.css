@@ -460,7 +460,10 @@
     background-attachment: fixed;
 }
 .play-btn {
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
+<<<<<<< Updated upstream
     height: 80px;
     width: 80px;
     font-size: 25px;
@@ -475,12 +478,30 @@
         color: #fff;
     } to {
         background-color: #fff;
+=======
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    animation: changeColor 2s linear infinite alternate-reverse;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: #FFB51D;
+        color: white;
+    } to {
+        background-color: white;
+>>>>>>> Stashed changes
         color: #FFB51D;
     }
 }
 iframe {
     border-radius: 15px;
-    margin-left: 55px;
+}
+.youtube-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal-body {
     padding-bottom: 55px;
