@@ -371,7 +371,7 @@
     flex-direction: column;
     margin: 10px;
     padding: 40px 0;
-    width: 190px;
+    width: 200px;
     gap: 20px;
     border-radius: 20px;
 }
@@ -461,12 +461,22 @@
 }
 .play-btn {
     border-radius: 50%;
-    padding: 20px;
-    transition: background-color 0.5s linear;
+    height: 80px;
+    width: 80px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: changeBackground 1s linear infinite alternate-reverse;
 }
-.play-btn:hover {
-    background-color: white;
-    color: #FFB51D;
+@keyframes changeBackground {
+    from {
+        background-color:#FFB51D;
+        color: #fff;
+    } to {
+        background-color: #fff;
+        color: #FFB51D;
+    }
 }
 iframe {
     border-radius: 15px;
