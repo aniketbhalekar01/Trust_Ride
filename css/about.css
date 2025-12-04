@@ -118,8 +118,9 @@ html, body {
 .car-slider img {
   position: absolute;
   bottom: 0;
+  left: -40%;
   height: 200px;
-  width: 30vw;
+  width: auto;
   max-width: 400px;
   min-width: 150px;
   animation: drive 16s linear infinite;
@@ -127,11 +128,11 @@ html, body {
 
 @keyframes drive {
   from {
-    left: 0;
+    left: -30%;
   }
 
   to {
-    left: 1500px;
+    left: 100%px;
   }
 }
 
@@ -146,7 +147,7 @@ html, body {
 
 .img-text{
   border: 1px solid;
-  height: 700px;
+  min-height: 600px;
   width: 100%;
   display: flex;
   gap: 20px;
@@ -154,7 +155,7 @@ html, body {
   box-sizing: border-box;
 }
 .img-text .left{
-  border: 1px solid #fff;
+  
   height: 600px;
   width: 700px;
   min-width: 300px;
@@ -190,7 +191,6 @@ html, body {
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
-  overflow: hidden;
 }
 
 .about-heading{
