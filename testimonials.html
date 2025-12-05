@@ -7,17 +7,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
    <link  rel= "stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/testimonials.css"/>
+    <link rel="stylesheet" href="css/services.css"/>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+     <!--Header Start-->
+    <header>
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="trust ride logo" class="logo">
+                </a>
+
+                <!-- Offcanvas Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Cars</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="car_details.html">Car Details</a></li>
+                                    <li><a class="dropdown-item" href="car_pricing.html">Prices</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="book_now.html">Book Now</a></li>
+                            <li class="nav-item"><a class="nav-link" href="testinomial.html">Testimonials</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <!--Header End-->
+<!-- 
+
+    slider page testimonials  -->
+     <section>
+        <div class="container-fluid car-image">
+           
+            <div class="services">
+            <h1><b>Testimonials</b></h1>
+
+          </div>
+           <div class="car-slider">
+                <img src="images/about-img2.png" alt="">
+            </div>
+        </div>
+      </section>
+
+
     <section class="py-5 bg-light">
     <div class="container">
         <h2 class="text-center mb-5">WHAT PEOPLE SAY ABOUT US</h2>
 
         <div class="testimonial-slider">
             <div class="testimonial-track">
+            
 
                   <!-- CARD 1 -->
                 <div class=testimonial-card>
@@ -26,13 +97,14 @@
                         <img src="/images/man01.png" class="rounded-circle testimonial-img mx-auto" 
                         width="75" height="70" alt="customer">
                         <div>
-                            <h5 class="mb-0">Sameer Desai</h5>
+                            <h5 class="mb-0"><b>Sameer Desai</b></h5>
                             <small class="text-muted">Customer</small>
                         </div>
                     </div>
                     <p>
-                        Great rental service! Car was clean and well maintained. Booking process was
-                        very easy and fast.
+                        Great rental service! Car was clean and well maintained. The booking process was very easy, and customer support was polite.
+                         The vehicle was clean and ready on time.
+
                     </p>
                     <div class="stars">★★★★★</div>
                 </div>
@@ -44,11 +116,13 @@
                         <img src="/images/wom1.png" class="rounded-circle testimonial-img mx-auto" 
                         width="75" height="70" alt="customer">
                         <div>
-                            <h5 class="mb-0">Payal Pawar</h5>
+                            <h5 class="mb-0"><b>Payal Pawar</b></h5>
                             <small class="text-muted">Customer</small>
                         </div>
                     </div>
                     <p>
+                        “I rented a car for a weekend trip and everything was smooth.
+                    The pickup and drop-off were quick, and the charges were fully transparent.”
                         Excellent experience. Staff was very friendly and the car pickup/drop was smooth.
                     </p>
                     <div class="stars">★★★★★</div>
@@ -61,11 +135,13 @@
                         <img src="/images/man02.png" class="rounded-circle testimonial-img mx-auto" 
                         width="75" height="70" alt="customer"> 
                         <div>
-                            <h5 class="mb-0">Rohit Raut</h5>
+                            <h5 class="mb-0"><b>Rohit Raut</b></h5>
                             <small class="text-muted">Customer</small>
                         </div>
                     </div>
                     <p>
+                        “Best rental service I’ve used till date. The car was in perfect condition.
+                        Mileage was excellent, and the staff guided me very professionally.”
                         Affordable pricing and great car quality. This is my go-to rental service now!
                     </p>
                     <div class="stars">★★★★</div>
@@ -78,11 +154,13 @@
                         <img src="/images/wom2.png" class="rounded-circle testimonial-img mx-auto" 
                         width="75" height="70" alt="customer">
                         <div>
-                            <h5 class="mb-0">Ritika Shinde</h5>
+                            <h5 class="mb-0"><b>Ritika Shinde</b></h5>
                             <small class="text-muted">Customer</small>
                         </div>
                     </div>
                     <p>
+                        A very reliable and budget-friendly service.
+                        I loved how well-maintained the car was. Definitely choosing this service again!
                         The car was in top condition and the entire process was hassle-free. Loved it!
                     </p>
                     <div class="stars">★★★★★</div>
@@ -95,11 +173,13 @@
                         <img src="/images/wom3.png" class="rounded-circle testimonial-img mx-auto" 
                         width="75" height="70" alt="customer">
                         <div>
-                            <h5 class="mb-0">Neha Patil</h5>
+                            <h5 class="mb-0"><b>Neha Patil</b></h5>
                             <small class="text-muted">Customer</small>
                         </div>
                     </div>
                     <p>
+                        “Customer service is top-notch! They explained every detail clearly.
+                        The whole journey was comfortable, and the car felt almost brand new.”              
                         Very professional service. Will definitely book again for my next trip.
                     </p>
                     <div class="stars">★★★★★</div>
@@ -112,11 +192,13 @@
                         <img src="/images/man03.png" class="rounded-circle testimonial-img mx-auto" 
                         width="75" height="70" alt="customer">
                         <div>
-                            <h5 class="mb-0">Ruturaj Mane</h5>
+                            <h5 class="mb-0"><b>Ruturaj Mane</b></h5>
                             <small class="text-muted">Customer</small>
                         </div>
                     </div>
                     <p>
+                        Really happy with my experience. Smooth booking, smooth ride.
+                    The team was helpful and flexible with timing. Highly recommended!   
                         Amazing experience! The car was in perfect condition and the team was very helpful.
                     </p>
                     <div class="stars">★★★★</div>
@@ -126,6 +208,7 @@
         </div>
     </div>
 </section>
+
 
 <!--Footer Section Start-->
     <footer>
