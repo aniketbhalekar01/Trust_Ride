@@ -85,9 +85,10 @@
 }
 
 .slide-text {
-    font-size: 90px;
+    font-size: 60px;
     color: white;
     font-weight: 700;
+    width: 70%;
 }
 
 .yellow {
@@ -237,6 +238,9 @@
 
 .contact li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact li a {
@@ -245,15 +249,20 @@
     font-size: 14px;
     margin-left: 20px;
     padding-top: 10px;
+    width: 200px;
 }
 
 .contact span {
     border: 1px solid #ffffffb3;
-    padding: 8px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     color: white;
     font-size: 14px;
     font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.5s linear;
 }
 
@@ -460,10 +469,7 @@
     background-attachment: fixed;
 }
 .play-btn {
-    height: 80px;
-    width: 80px;
     border-radius: 50%;
-<<<<<<< Updated upstream
     height: 80px;
     width: 80px;
     font-size: 25px;
@@ -478,30 +484,12 @@
         color: #fff;
     } to {
         background-color: #fff;
-=======
-    padding: 20px;
-    font-size: 25px;
-    margin-top: 20px;
-    animation: changeColor 2s linear infinite alternate-reverse;
-}
-
-@keyframes changeColor {
-    from {
-        background-color: #FFB51D;
-        color: white;
-    } to {
-        background-color: white;
->>>>>>> Stashed changes
         color: #FFB51D;
     }
 }
 iframe {
     border-radius: 15px;
-}
-.youtube-vid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 55px;
 }
 .modal-body {
     padding-bottom: 55px;
