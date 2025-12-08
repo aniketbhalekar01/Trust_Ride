@@ -85,12 +85,16 @@
 }
 
 .slide-text {
+    text-align: center;
     font-size: 60px;
     color: white;
     font-weight: 700;
-    width: 70%;
+    width: 100%;
 }
-
+.carousel-text {
+    width: 80%;
+    transform: translateX(100px);
+}
 .yellow {
     color: #FFB51D;
 }
@@ -99,10 +103,6 @@
     .hero-section {
         height: 70vh;
         width: 100%;
-    }
-
-    .slide-text {
-        font-size: 40px;
     }
 
     .navbar-brand img {
@@ -117,6 +117,14 @@
     .navbar {
         height: 70px;
 
+    }
+    .nav-container {
+        height: 70px;
+    }
+    .carousel-text {
+        transform: translateX(30px);
+        text-align: center;
+        font-size: 35px;
     }
 
 }
