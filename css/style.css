@@ -85,11 +85,16 @@
 }
 
 .slide-text {
-    font-size: 90px;
+    text-align: center;
+    font-size: 60px;
     color: white;
     font-weight: 700;
+    width: 100%;
 }
-
+.carousel-text {
+    width: 80%;
+    transform: translateX(120px);
+}
 .yellow {
     color: #FFB51D;
 }
@@ -98,10 +103,6 @@
     .hero-section {
         height: 70vh;
         width: 100%;
-    }
-
-    .slide-text {
-        font-size: 40px;
     }
 
     .navbar-brand img {
@@ -116,6 +117,14 @@
     .navbar {
         height: 70px;
 
+    }
+    .nav-container {
+        height: 70px;
+    }
+    .carousel-text {
+        transform: translateX(30px);
+        text-align: center;
+        font-size: 35px;
     }
 
 }
@@ -237,6 +246,9 @@
 
 .contact li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact li a {
@@ -245,15 +257,20 @@
     font-size: 14px;
     margin-left: 20px;
     padding-top: 10px;
+    width: 200px;
 }
 
 .contact span {
     border: 1px solid #ffffffb3;
-    padding: 8px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     color: white;
     font-size: 14px;
     font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.5s linear;
 }
 
@@ -460,8 +477,6 @@
     background-attachment: fixed;
 }
 .play-btn {
-    height: 80px;
-    width: 80px;
     border-radius: 50%;
     height: 80px;
     width: 80px;
@@ -477,6 +492,7 @@
         color: #fff;
     } to {
         background-color: #fff;
+<<<<<<< HEAD
 
     padding: 20px;
     font-size: 25px;
@@ -491,16 +507,14 @@
     } to {
         background-color: white;
 
+=======
+>>>>>>> 8c2488f023ed9f6e17a9f558369468689760f32e
         color: #FFB51D;
     }
 }
 iframe {
     border-radius: 15px;
-}
-.youtube-vid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 55px;
 }
 .modal-body {
     padding-bottom: 55px;
@@ -509,4 +523,10 @@ iframe {
     color: #fff;
     font-size: 40px;
     font-weight: 700;
+}
+@media(max-width : 576px) {
+    .more-about h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
 }
