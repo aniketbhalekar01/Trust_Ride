@@ -1,4 +1,8 @@
 
+
+*{
+     font-family: "Roboto", sans-serif;
+}
 .price-card {
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -47,4 +51,9 @@
 
 .row {
     row-gap: 40px;
+}
+
+h3{
+    color: #ff9900;
+    font-size: 50px;
 }
