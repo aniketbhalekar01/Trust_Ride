@@ -15,6 +15,7 @@
 /* individual card */
 .testimonial-card {
     min-width: 350px;
+    height: 300px;
     background: white;
     padding: 25px;
     border-radius: 20px;
@@ -78,3 +79,30 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+
+/* card width for screens 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .testimonial-card {
+        min-width: 300px;      
+        padding: 25px;         
+    }
+
+    .testimonial-track {
+        gap: 18px;            
+    }
+
+    .testimonial-img {
+        width: 65px;           
+        height: 65px;
+    }
+
+    .quote-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        top: -15px;
+        right: -15px;
+    }
+}
+
