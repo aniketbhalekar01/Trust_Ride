@@ -214,7 +214,7 @@
 
 .about-progress .progress {
   height: 19px;
-  width: 600px;
+  width: 650px;
 }
 
 .about-progress .progress .progress-bar {
@@ -352,6 +352,135 @@
 
 .footer-section input::placeholder {
   color: #ffffffb3;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+}
+
+.email-box .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB51D;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    padding: 18px;
+    position: relative;
+    right: 43px;
+    transition: background-color 0.5s linear;
+}
+
+.email-box .search:hover {
+    background-color: white;
+    color: #FFB51D;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quick-links li {
+    list-style: none;
+}
+
+.quick-links li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 14px;
+}
+
+.quick-links h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.services li {
+    list-style: none;
+}
+
+.services li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 14px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+.contact span {
+    border: 1px solid #ffffffb3;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s linear;
+}
+
+.contact span:hover {
+    background-color: #FFB51D;
+}
+
+.footer-section li a {
+    transition: color 0.2s linear;
+}
+
+.footer-section li a:hover {
+    color: #FFB51D;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 30px;
+
+}
+
+.trust-ride-copy {
+    color: #FFB51D;
 }
 
 @media(max-width:576px) {
