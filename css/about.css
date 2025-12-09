@@ -1,74 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
-    background-color: #fff;
-    font-weight: 600;
-    font-size: 19px;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    z-index: 50;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 19px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 50;
 }
 
 .navbar-toggler {
-    position: fixed;
-    top: 15px;
-    right: 10px;
+  position: fixed;
+  top: 15px;
+  right: 10px;
 }
 
 .navbar-brand img {
-    margin-top: 20px;
-    height: 250px;
+  margin-top: 20px;
+  height: 250px;
 }
 
 .nav-link {
-    transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .nav-link:hover {
-    color: #FFB51D;
+  color: #FFB51D;
 
 }
 
 .nav-link {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 @media (max-width:576px) {
-    .hero-section {
-        height: 70vh;
-        width: 100%;
-    }
+  .hero-section {
+    height: 70vh;
+    width: 100%;
+  }
 
-    .slide-text {
-        font-size: 40px;
-    }
+  .slide-text {
+    font-size: 40px;
+  }
 
-    .navbar-brand img {
-        transform: scale(1.3);
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: -20px;
-        height: 100px;
-    }
+  .navbar-brand img {
+    transform: scale(1.3);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+    height: 100px;
+  }
 
-    .navbar {
-        height: 70px;
+  .navbar {
+    height: 70px;
 
-    }
+  }
 
 }
+
+/* about first section */
 .car-image {
   position: relative;
   background-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url(../images/about-img.jpg);
   height: 400px;
   width: 100%;
@@ -86,9 +88,9 @@
   max-width: 600px;
 }
 
-.car-image .about  {
+.car-image .about h1 {
   color: white;
-  font-size: 50px;
+  font-size: 27px;
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   margin-top: 50px;
@@ -100,6 +102,7 @@
   letter-spacing: 1px;
   margin-top: 10px;
 }
+
 .car-slider {
   position: absolute;
   overflow: hidden;
@@ -130,132 +133,381 @@
   }
 }
 
-.about-section{
-  display: flex;
-  padding-top: 50px;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 768px) {
+  .car-image {
+    height: 320px;
+  }
+
+  .car-image .about h1 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .car-image .about p {
+    font-size: 16px;
+  }
+
+  .car-slider img {
+    width: 45vw;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .car-image {
+    height: 280px;
+  }
+
+  .car-image .about h1 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .car-image .about p {
+    font-size: 14px;
+  }
+
+  .car-slider img {
+    width: 65vw;
+    min-width: 140px;
+  }
+}
+
+/* about details section */
+.about-company {
   background-color: white;
 }
-.car-img img{
-  width: 750px;
-  height: 650px;
 
-}
-.about-section .company{
-  height: 650px;
-  width: 650px;
-  overflow: hidden;
-}
-.about-section .car-logo span{
+.about-trust .car-logo span {
   color: #FFB51D;
-  font-size: large;
-}
-.about-section .car-logo h1{
-  text-align: justify;
-  font-weight: 700;
-  margin-top: 10px;
-  color: #131222;
-  font-size:35px;
-  font-family: sans-serif;
-  
-}
-.company .text{
-  padding: 10px 0px 0px 0px;
-  overflow: hidden;
-}
-.company .text .text-one{
-  color: #FFB51D;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
+}
 
-}
-.company .text .text-two{
-  font-size: 16px;
-  padding-top: 5px;
-  color: #868689;
-  width: 550px;
-  height: 72px;
-  text-align: justify;
-}
-.about-progress{
-  margin-top: 25px;
+.about-trust {
   overflow: hidden;
 }
-.about-progress p{
-  font-size: 20px;
+
+.about-trust h1 {
+  margin-top: 10px;
+  text-align: justify;
   font-weight: 700;
 }
-.about-one_btn{
-  padding-top:45px ;
-  display: flex;
+
+.about-text h5 {
+  color: #FFB51D;
+  padding-top: 10px;
 
 }
 
-.about-btn button{
+.about-text .text-two {
+  color: #6f6f6edc;
+  padding-top: 10px;
+  width: 620px;
+  display: inline-block;
+}
+
+.about-progress {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.about-progress .progress {
+  height: 19px;
+  width: 650px;
+}
+
+.about-progress .progress .progress-bar {
+  height: 18px;
+  width: 90%;
+  color: #131222;
+  background-color: #FFB51D;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.about-progress p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-btn button {
   width: 150px;
   height: 55px;
   background-color: #FFB51D;
   color: #131222;
   border-radius: 10px;
-  border: 1px solid #FFB51D ;
+  border: 1px solid #FFB51D;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  transition: all 0.5s ease;
+  margin-top: 40px;
 }
-.about-btn button:hover{
+
+.about-btn button:hover {
   background-color: #131222;
   color: white;
 }
-.about-one_call{
-  width: 350px;
-  height: 60px;
-  display: flex;
-  margin-left: 35px;
-  padding-top: 8px;
-}
-.about-one_call i{
-  height: 45px;
-  width: 45px;
-  background-color: #FFB51D;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 6px;
-  font-size: 23px;
-}
-.about-one_call h5{
-  padding-left: 20px;
-  margin-top: 10px;
-}
-@media (max-width: 768px){
 
-  .about-section .company{
-    text-align: center;
+@media (max-width: 992px) {
+  .about-text .text-two {
+    max-width: 100%;
+  }
+    .about-progress .progress {
+    width: 100%;
   }
 
-  .company .text .text-two{
-    text-align: center;
+  .about-progress p {
+    font-size: 16px;
   }
 
-  .about-one_btn{
-    justify-content: center;
-  }
-
-  .about-one_call{
-    justify-content: center;
+  .about-btn button {
+    margin-top: 25px;
   }
 }
-@media (max-width: 480px){
-  .about-section .car-logo h1{
+
+
+@media (max-width: 768px) {
+  .about-trust h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+ .about-text h5 {
+    font-size: 18px;
+  }
+  
+
+  .about-text .text-two {
+    font-size: 15px;
+  }
+
+  .about-progress .progress {
+    height: 16px;
+  }
+
+  .about-progress .progress .progress-bar {
+    height: 15px;
+  }
+
+  .about-progress p {
+    font-size: 15px;
+  }
+
+  .about-btn button {
+    width: 100%;
+    height: 50px;
+  }
+  
+}
+
+
+@media (max-width: 576px) {
+  .about-trust h1 {
     font-size: 22px;
   }
 
-  .about-one_btn{
-    gap: 15px;
+  .about-text h5 {
+    font-size: 16px;
   }
 
-  .about-btn button{
-    width: 100%;
-    max-width: 240px;
+  .about-text .text-two {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about-btn button {
+    font-size: 15px;
+  }
+   .about-progress .progress {
+    height: 17px;
+  }
+
+  .about-progress .progress .progress-bar {
+    height: 16px;
+    width: 85%;
+  }
+  
+}
+
+/* footer section */
+.footer-section {
+  background-image:
+    linear-gradient(to right, #131222e1),
+    url("../images/bg-img4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 50px;
+}
+
+
+.footer-section .logo {
+  height: 150px;
+}
+
+.footer-section .text {
+  color: #ffffffb3;
+  font-size: 12px;
+}
+
+.footer-section input {
+  background: transparent;
+  border-radius: 20px;
+  padding: 13px 25px;
+  width: 300px;
+}
+
+.footer-section input:focus {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.footer-section input::placeholder {
+  color: #ffffffb3;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+}
+
+.email-box .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB51D;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    padding: 18px;
+    position: relative;
+    right: 43px;
+    transition: background-color 0.5s linear;
+}
+
+.email-box .search:hover {
+    background-color: white;
+    color: #FFB51D;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quick-links li {
+    list-style: none;
+}
+
+.quick-links li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 14px;
+}
+
+.quick-links h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.services li {
+    list-style: none;
+}
+
+.services li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 14px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+.contact span {
+    border: 1px solid #ffffffb3;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s linear;
+}
+
+.contact span:hover {
+    background-color: #FFB51D;
+}
+
+.footer-section li a {
+    transition: color 0.2s linear;
+}
+
+.footer-section li a:hover {
+    color: #FFB51D;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 30px;
+
+}
+
+.trust-ride-copy {
+    color: #FFB51D;
+}
+
+@media(max-width:576px) {
+  .footer-section {
+    background-image:
+      linear-gradient(to right, #131222e1),
+      url("../images/bg-img5.jpg");
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  .footer-section>div>div {
+    margin-bottom: 25px;
   }
 }
