@@ -478,6 +478,10 @@
 }
 .play-btn {
     border-radius: 50%;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     height: 80px;
     width: 80px;
     font-size: 25px;
@@ -493,7 +497,10 @@
     } to {
         background-color: #fff;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     padding: 20px;
     font-size: 25px;
     margin-top: 20px;
@@ -507,8 +514,11 @@
     } to {
         background-color: white;
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
         color: #FFB51D;
     }
 }
