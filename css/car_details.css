@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 19px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-toggler {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+}
+
+.navbar-brand img {
+  margin-top: 20px;
+  height: 250px;
+}
+
+.nav-link {
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #FFB51D;
+
+}
+
+.nav-link {
+  margin-right: 5px;
+}
+
+@media (max-width:576px) {
+  .hero-section {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .slide-text {
+    font-size: 40px;
+  }
+
+  .navbar-brand img {
+    transform: scale(1.3);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+    height: 100px;
+  }
+
+  .navbar {
+    height: 70px;
+
+  }
+
+}
+
+/* about first section */
+.car-image {
+  position: relative;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url(..//images/brezza\ car-detail2.jpg);
+  height: 480px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-image .about {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.car-image .about h1  {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  margin-top: 50px;
+}
+
+.car-image .about  {
+  color: white;
+  font-size: 21px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.car-image .about  a {
+  text-decoration: none;
+  color: white;
+}
+
+.bi-chevron-right {
+  font-size: 17px;
+  font-weight: bolder;
+  color: #ffb51d;
+}
+
+.car-slider {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+
+}
+
+.car-slider img {
+  top: 38px;
+  height: 210px;
+  width: 30vw;
+  max-width: 400px;
+  min-width: 180px;
+  position: relative;
+  left: 0px;
+  animation: drive 16s linear infinite;
+}
+
+@keyframes drive {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 1500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-image {
+    height: 320px;
+  }
+
+  .car-image .about h1 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .car-image .about p {
+    font-size: 16px;
+  }
+
+  .car-slider img {
+    width: 45vw;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .car-image {
+    height: 280px;
+  }
+
+  .car-image .about h1 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .car-image .about p {
+    font-size: 14px;
+  }
+
+  .car-slider img {
+    width: 65vw;
+    min-width: 140px;
+  }
+}
+
+/* car details section */
+
+.car-logo {
+  text-align: center;
+}
+
+.car-logo span {
+  color: #FFB51D;
+}
+
+.car-card {
+  border-radius: 20px;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 1px solid rgba(128, 128, 128, 0.29);
+}
+
+.car-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.28);
+}
+
+.car-img img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.starting{
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.details-btn {
+  background: #FFB51D;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 1s ease;
+}
+.details-btn:hover{
+  background-color: #000;
+  color: white;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.icon-text span {
+  font-size: 17px;
+}
+.icon-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer section */
+.footer-section {
+  background-image:
+    linear-gradient(to right, #131222e1),
+    url("../images/bg-img4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 50px;
+}
+
+
+.footer-section .logo {
+  height: 150px;
+}
+
+.footer-section .text {
+  color: #ffffffb3;
+  font-size: 12px;
+}
+
+.footer-section input {
+  background: transparent;
+  border-radius: 20px;
+  padding: 13px 25px;
+  width: 300px;
+}
+
+.footer-section input:focus {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.footer-section input::placeholder {
+  color: #ffffffb3;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+}
+
+.email-box .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB51D;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  padding: 18px;
+  position: relative;
+  right: 43px;
+  transition: background-color 0.5s linear;
+}
+
+.email-box .search:hover {
+  background-color: white;
+  color: #FFB51D;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quick-links li {
+  list-style: none;
+}
+
+.quick-links li a {
+  text-decoration: none;
+  color: #ffffffb3;
+  font-size: 14px;
+}
+
+.quick-links h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.services li {
+  list-style: none;
+}
+
+.services li a {
+  text-decoration: none;
+  color: #ffffffb3;
+  font-size: 14px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.contact li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: #ffffffb3;
+  font-size: 14px;
+  margin-left: 20px;
+  padding-top: 10px;
+  width: 200px;
+}
+
+.contact span {
+  border: 1px solid #ffffffb3;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s linear;
+}
+
+.contact span:hover {
+  background-color: #FFB51D;
+}
+
+.footer-section li a {
+  transition: color 0.2s linear;
+}
+
+.footer-section li a:hover {
+  color: #FFB51D;
+}
+
+.copyright {
+  color: #fff;
+  margin-top: 30px;
+
+}
+
+.trust-ride-copy {
+  color: #FFB51D;
+}
+
+@media(max-width:576px) {
+  .footer-section {
+    background-image:
+      linear-gradient(to right, #131222e1),
+      url("../images/bg-img5.jpg");
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  .footer-section>div>div {
+    margin-bottom: 25px;
+  }
+}

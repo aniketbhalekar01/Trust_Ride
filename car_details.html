@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/car_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=auto_transmission" />
+       
+</head>
+
+<body>
+    <!--Header Start-->
+    <header>
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="trust ride logo" class="logo" />
+                </a>
+
+                <!-- Offcanvas Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Cars</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="car_details.html">Car Details</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="car_pricing.html">Prices</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book_now.html">Book Now</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="testimonials.html">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header End-->
+
+    <section>
+        <div class="container-fluid car-image">
+            <div class="about">
+                <h1><b>CAR DETAILS</b></h1>
+
+            </div>
+            <div class="car-slider">
+                <img src="images/about-img2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color:white;">
+        <div class="container py-5">
+
+            <div class="row g-4">
+                <div class="car-logo">
+                    <img src="images/car-logo.png" alt="" class="img-fluid">
+                    <span>CAR DETAILS</span>
+                </div>
+                <!-- CARD ONE -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="car-card p-3">
+                        <div class="car-img">
+                            <img src="images/inova car-detail.jpg" alt="">
+                        </div>
+
+                        <h4 class="mt-3">Toyoto Inova</h4>
+                        <hr>
+
+                        <div class="mt-3">
+                            <div class="icon-div">
+                                <div class="icon-text"><span class="material-symbols-outlined">
+                                        auto_transmission
+                                    </span> Manual</div>
+                                <div class="icon-text">📍 25 KM</div>
+                                <div class="icon-text"><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                            </div>
+                            <div class="icon-div mt-2">
+                                <div class="icon-text"><i class="fa-solid fa-star"></i> Basic</div>
+                                <div class="icon-text"><i class="fa fa-user" aria-hidden="true"></i> Age 25</div>
+                                <div class="icon-text"><i class="fa-solid fa-people-group"></i> 5 Persons</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-2 mt-3 starting">
+                            <strong class="text-black">Starting From <span class="text-success">700rs</span>/ Day</strong>
+                        </div>
+
+                        <button class="details-btn mt-3">
+                            Details Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD TWO-->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="car-card p-3">
+                        <div class="car-img">
+                            <img src="images/scorpio car-detail.jpg" alt="">
+                        </div>
+
+
+                        <h4 class="mt-3">Scorpio</h4>
+                        <hr>
+
+                        <div class="mt-3">
+                            <div class="icon-div">
+                                <div class="icon-text"><span class="material-symbols-outlined">
+                                        auto_transmission
+                                    </span> Manual</div>
+                                <div class="icon-text">📍 25 KM</div>
+                                <div class="icon-text"><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                            </div>
+                            <div class="icon-div mt-2">
+                                <div class="icon-text"><i class="fa-solid fa-star"></i> Basic</div>
+                                <div class="icon-text"><i class="fa fa-user" aria-hidden="true"></i> Age 25</div>
+                                <div class="icon-text"><i class="fa-solid fa-people-group"></i> 5 Persons</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-2 mt-3 starting">
+                            <strong class="text-black">Starting From <span class="text-success">700rs</span>/ Day</strong>
+                        </div>
+
+                        <button class="details-btn mt-3">
+                            Details Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD THREE -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="car-card p-3">
+                        <div class="car-img">
+                            <img src="images/brezza car-detail.avif" alt="">
+                        </div>
+
+                        <h4 class="mt-3">Breeza</h4>
+                        <hr>
+
+                        <div class="mt-3">
+                            <div class="icon-div">
+                                <div class="icon-text"><span class="material-symbols-outlined">
+                                        auto_transmission
+                                    </span> Manual</div>
+                                <div class="icon-text">📍 25 KM</div>
+                                <div class="icon-text"><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                            </div>
+                            <div class=" mt-2 icon-div">
+                                <div class="icon-text"><i class="fa-solid fa-star"></i> Basic</div>
+                                <div class="icon-text"><i class="fa fa-user" aria-hidden="true"></i> Age 25</div>
+                                <div class="icon-text"><i class="fa-solid fa-people-group"></i> 5 Persons</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-2 mt-3 starting">
+                            <strong class="text-black">Starting From <span class="text-success">700rs</span>/ Day</strong>
+                        </div>
+
+                        <button class="details-btn mt-3">
+                            Details Now →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- second section of car details -->
+     <section style="background-color:white;">
+        <div class="container py-5">
+
+            <div class="row g-4">
+                <!-- CARD ONE -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="car-card p-3">
+                        <div class="car-img">
+                            <img src="images/amaze car -car-detail.avif" alt="">
+                        </div>
+
+                        <h4 class="mt-3">Honda Amaze</h4>
+                        <hr>
+
+                        <div class="mt-3">
+                            <div class="icon-div">
+                                <div class="icon-text"><span class="material-symbols-outlined">
+                                        auto_transmission
+                                    </span> Manual</div>
+                                <div class="icon-text">📍 25 KM</div>
+                                <div class="icon-text"><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                            </div>
+                            <div class="icon-div mt-2">
+                                <div class="icon-text"><i class="fa-solid fa-star"></i> Basic</div>
+                                <div class="icon-text"><i class="fa fa-user" aria-hidden="true"></i> Age 25</div>
+                                <div class="icon-text"><i class="fa-solid fa-people-group"></i> 5 Persons</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-2 mt-3 starting">
+                            <strong class="text-black">Starting From <span class="text-success">700rs</span>/ Day</strong>
+                        </div>
+
+                        <button class="details-btn mt-3">
+                            Details Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD TWO-->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="car-card p-3">
+                        <div class="car-img">
+                            <img src="images/tata altroz - cardetail.jpg" alt="">
+                        </div>
+
+
+                        <h4 class="mt-3">Tata Altroz</h4>
+                        <hr>
+
+                        <div class="mt-3">
+                            <div class="icon-div">
+                                <div class="icon-text"><span class="material-symbols-outlined">
+                                        auto_transmission
+                                    </span> Manual</div>
+                                <div class="icon-text">📍 25 KM</div>
+                                <div class="icon-text"><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                            </div>
+                            <div class="icon-div mt-2">
+                                <div class="icon-text"><i class="fa-solid fa-star"></i> Basic</div>
+                                <div class="icon-text"><i class="fa fa-user" aria-hidden="true"></i> Age 25</div>
+                                <div class="icon-text"><i class="fa-solid fa-people-group"></i> 5 Persons</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-2 mt-3 starting">
+                            <strong class="text-black">Starting From <span class="text-success">700rs</span>/ Day</strong>
+                        </div>
+
+                        <button class="details-btn mt-3">
+                            Details Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD THREE -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="car-card p-3">
+                        <div class="car-img">
+                            <img src="images/swift - car-detail.webp" alt="">
+                        </div>
+
+                        <h4 class="mt-3">Breeza</h4>
+                        <hr>
+
+                        <div class="mt-3">
+                            <div class="icon-div">
+                                <div class="icon-text"><span class="material-symbols-outlined">
+                                        auto_transmission
+                                    </span> Manual</div>
+                                <div class="icon-text">📍 25 KM</div>
+                                <div class="icon-text"><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                            </div>
+                            <div class="icon-div mt-2">
+                                <div class="icon-text"><i class="fa-solid fa-star"></i> Basic</div>
+                                <div class="icon-text"><i class="fa fa-user" aria-hidden="true"></i> Age 25</div>
+                                <div class="icon-text"><i class="fa-solid fa-people-group"></i> 5 Persons</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-2 mt-3 starting">
+                            <strong class="text-black">Starting From <span class="text-success">700rs</span>/ Day</strong>
+                        </div>
+
+                        <button class="details-btn mt-3">
+                            Details Now →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer Section Start-->
+    <footer>
+        <div class="container-fluid footer-section">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/logo2.png" alt="Trust Ride Logo" class="logo">
+                    <p class="text">
+                        Car Is Where Early Adopters And Innovation Seekers Find Lively Imaginative Tech.
+                    </p>
+
+                    <div class="email-box">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <span class="search">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 quick-links">
+                    <h2>QUICK LINKS</h2>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Drivers</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 services">
+                    <h2>SERVICES</h2>
+                    <li>
+                        <a href="#">Your Reliable Ride</a>
+                    </li>
+                    <li>
+                        <a href="#">Express Shuttle</a>
+                    </li>
+                    <li>
+                        <a href="#">Travel in Style</a>
+                    </li>
+                    <li>
+                        <a href="#">Rental List</a>
+                    </li>
+                    <li>
+                        <a href="#">Dash Transport</a>
+                    </li>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 contact">
+                    <h2>CONTACT US</h2>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <a href="#">2nd Floor, Metro Square Complex, Pimpri Market Road, Pimpri, Pune 411018</a>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <a href="#">020-6712 3456</a>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <a href="#">trustride@gmail.com</a>
+                    </li>
+                </div>
+                <div class="row">
+                    <div class="col-12 copyright">
+                        <p class="text-center">&copy; 2025 <span class="trust-ride-copy">Trust Ride</span> All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer Section End-->
+    <script src="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
