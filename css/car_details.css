@@ -207,7 +207,7 @@
 
 .car-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.55);
 }
 
 .car-img img {
@@ -238,8 +238,9 @@
 }
 
 .icon-text {
-  display: flex;
+  display:flex;
   align-items: center;
+  justify-content: space-between;
   gap: 6px;
   font-size: 14px;
 }
@@ -249,7 +250,11 @@
 }
 .icon-div{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+  
 }
 
 /* footer section */
