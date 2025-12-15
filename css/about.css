@@ -432,52 +432,51 @@
 }
 
 
-.rent-cta {
-      background: linear-gradient(
-        rgba(255, 181, 29, 0.9),
-        rgba(255, 181, 29, 0.9)
-      ),
-      url("..//images/about-img-2.jpg"); /* optional background image */
-      background-size: cover;
-      background-position: center;
-      padding: 80px 20px;
-    }
+.rent-car {
+  background: linear-gradient(rgba(255, 181, 29, 0.9),
+      rgba(255, 181, 29, 0.9)),
+    url("..//images/about-img-2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+}
 
-    .rent-cta small {
-      font-weight: 500;
-      color: #000;
-    }
+.rent-car small {
+  font-weight: 500;
+  color: #000;
+}
 
-    .rent-cta h1 {
-      font-weight: 800;
-      color: #0b0b1f;
-    }
+.rent-car h1 {
+  font-weight: 800;
+  color: #0b0b1f;
+}
 
-    .btn-dark-custom {
-      background-color: #0b0b1f;
-      color: #fff;
-      border-radius: 12px;
-      padding: 12px 26px;
-      transition: all 0.4s ease;
-    }
+.btn-dark-custom {
+  background-color: #0b0b1f;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 26px;
+  transition: all 0.4s ease;
+}
 
-    .btn-outline-custom {
-      background-color: #fff;
-      color: #000;
-      border-radius: 12px;
-      padding: 12px 26px;
-      border: none;
-      transition: all 0.4s ease;
-    }
+.btn-outline-custom {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  padding: 12px 26px;
+  border: none;
+  transition: all 0.4s ease;
+}
 
-    .btn-outline-custom:hover {
-      background-color: #333;
-      color: white;
-    }
-    .btn-dark-custom:hover{
-      background-color:white ;
-      color: #000;
-    }
+.btn-outline-custom:hover {
+  background-color: #333;
+  color: white;
+}
+
+.btn-dark-custom:hover {
+  background-color: white;
+  color: #000;
+}
 
 /* footer section */
 .footer-section {
