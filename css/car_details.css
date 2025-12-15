@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -71,7 +71,7 @@
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)),
-    url(../images/brezza\ car-detail2.jpg);
+    url(..//images/brezza\ car-detail2.jpg);
   height: 480px;
   width: 100%;
   background-size: cover;
@@ -88,7 +88,7 @@
   max-width: 600px;
 }
 
-.car-image .about h1 {
+.car-image .about h1  {
   color: white;
   font-size: 60px;
   font-weight: 700;
@@ -97,14 +97,13 @@
   margin-top: 50px;
 }
 
-.car-image .about {
+.car-image .about  {
   color: white;
   font-size: 21px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
-
-.car-image .about a {
+.car-image .about  a {
   text-decoration: none;
   color: white;
 }
@@ -185,299 +184,78 @@
   }
 }
 
-/* about details section */
-.about-company {
-  background-color: white;
-}
+/* car details section */
 
-.about-trust .car-logo span {
-  color: #FFB51D;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.about-trust {
-  overflow: hidden;
-}
-
-.about-trust h1 {
-  margin-top: 10px;
-  text-align: justify;
-  font-weight: 700;
-}
-
-.about-text h5 {
-  color: #FFB51D;
-  padding-top: 10px;
-
-}
-
-.about-text .text-two {
-  color: #6f6f6edc;
-  padding-top: 10px;
-  width: 620px;
-  display: inline-block;
-}
-
-.about-progress {
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-.about-progress .progress {
-  height: 19px;
-  width: 650px;
-}
-
-.about-progress .progress .progress-bar {
-  height: 18px;
-  width: 90%;
-  color: #131222;
-  background-color: #FFB51D;
-  font-size: 15px;
-  border-radius: 6px;
-}
-
-.about-progress p {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.about-btn button {
-  width: 150px;
-  height: 55px;
-  background-color: #FFB51D;
-  color: #131222;
-  border-radius: 10px;
-  border: 1px solid #FFB51D;
-  font-weight: 500;
-  font-size: 16px;
+.car-logo {
   text-align: center;
-  transition: all 0.5s ease;
-  margin-top: 40px;
 }
 
-.about-btn button:hover {
-  background-color: #131222;
+.car-logo span {
+  color: #FFB51D;
+}
+
+.car-card {
+  border-radius: 20px;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 1px solid rgba(128, 128, 128, 0.29);
+  text-align: center;
+}
+
+
+.car-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.55);
+}
+
+.car-img img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.starting{
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.details-btn {
+  background: #FFB51D;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 1s ease;
+}
+.details-btn:hover{
+  background-color: #000;
   color: white;
 }
 
-@media (max-width: 992px) {
-  .about-text .text-two {
-    max-width: 100%;
-  }
-
-  .about-progress .progress {
-    width: 100%;
-  }
-
-  .about-progress p {
-    font-size: 16px;
-  }
-
-  .about-btn button {
-    margin-top: 25px;
-  }
+.icon-text {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 14px;
 }
 
-
-@media (max-width: 768px) {
-  .about-trust h1 {
-    font-size: 24px;
-    text-align: left;
-  }
-
-  .about-text h5 {
-    font-size: 18px;
-  }
-
-
-  .about-text .text-two {
-    font-size: 15px;
-  }
-
-  .about-progress .progress {
-    height: 16px;
-  }
-
-  .about-progress .progress .progress-bar {
-    height: 15px;
-  }
-
-  .about-progress p {
-    font-size: 15px;
-  }
-
-  .about-btn button {
-    width: 100%;
-    height: 50px;
-  }
-
-}
-
-
-@media (max-width: 576px) {
-  .about-trust h1 {
-    font-size: 22px;
-  }
-
-  .about-text h5 {
-    font-size: 16px;
-  }
-
-  .about-text .text-two {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .about-btn button {
-    font-size: 15px;
-  }
-
-  .about-progress .progress {
-    height: 17px;
-  }
-
-  .about-progress .progress .progress-bar {
-    height: 16px;
-    width: 85%;
-  }
-
-}
-
-/* driver section */
-
-.our-driver {
-  text-align: center;
-  padding: 20px 10px;
-}
-
-.our-driver span {
-  color: #FFB51D;
+.icon-text span {
   font-size: 17px;
-  font-weight: 500;
 }
-
-.our-driver h1 {
-  font-weight: 700;
+.icon-div{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+  
 }
-
-
-
-.driver {
-  width: 100%;
-  max-width: 100%;
-  text-align: center;
-  border-radius: 20px;
-  margin-bottom: 25px;
-  background-color: white;
-  padding-bottom: 15px;
-  transition: 0.3s ease-in-out;
-}
-
-.driver img {
-  width: 100%;
-  height: 280px;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-}
-
-.driver-body h2 {
-  font-size: 20px;
-  font-family: sans-serif;
-  color: #131222;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.driver-body h3 {
-  font-size: 16px;
-  color: #686868;
-}
-
-
-
-@media (max-width: 992px) {
-  .driver img {
-    height: 250px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .driver img {
-    height: 230px;
-  }
-}
-
-
-@media (max-width: 576px) {
-  .driver {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .driver img {
-    height: 280px;
-  }
-
-  .driver-body h2 {
-    font-size: 18px;
-  }
-
-  .driver-body h3 {
-    font-size: 15px;
-  }
-}
-
-
-.rent-cta {
-      background: linear-gradient(
-        rgba(255, 181, 29, 0.9),
-        rgba(255, 181, 29, 0.9)
-      ),
-      url("..//images/about-img-2.jpg"); /* optional background image */
-      background-size: cover;
-      background-position: center;
-      padding: 80px 20px;
-    }
-
-    .rent-cta small {
-      font-weight: 500;
-      color: #000;
-    }
-
-    .rent-cta h1 {
-      font-weight: 800;
-      color: #0b0b1f;
-    }
-
-    .btn-dark-custom {
-      background-color: #0b0b1f;
-      color: #fff;
-      border-radius: 12px;
-      padding: 12px 26px;
-      transition: all 0.4s ease;
-    }
-
-    .btn-outline-custom {
-      background-color: #fff;
-      color: #000;
-      border-radius: 12px;
-      padding: 12px 26px;
-      border: none;
-      transition: all 0.4s ease;
-    }
-
-    .btn-outline-custom:hover {
-      background-color: #333;
-      color: white;
-    }
-    .btn-dark-custom:hover{
-      background-color:white ;
-      color: #000;
-    }
 
 /* footer section */
 .footer-section {

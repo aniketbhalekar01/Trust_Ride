@@ -8,15 +8,16 @@
     border-radius: 15px;
     overflow: hidden;
     transition: 0.4s ease;
-    background: white;
+    background: rgb(58, 58, 58);
     cursor: pointer;
     margin-bottom: 35px;
+    color: white;
 }
 
 
 .price-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 18px 35px black;
 }
 
 
@@ -64,6 +65,7 @@ h3{
     margin-top: 15px;
 }
 
+
 .price-card-price h2 {
     font-size: 28px;
     margin: 0;
@@ -72,6 +74,7 @@ h3{
 
 .price-card-price span {
     font-size: 17px;
-    color: #6d6d6d;
+    color: white;
     margin: 0;
+    
 }
