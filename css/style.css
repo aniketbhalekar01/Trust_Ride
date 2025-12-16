@@ -530,5 +530,8 @@ iframe {
     .footer-section .row>div {
         margin-bottom: 20px;
     }
+    .footer-section {
+        padding-bottom: 0;
+    }
    
 }   
