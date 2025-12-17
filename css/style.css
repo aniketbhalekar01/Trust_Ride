@@ -112,6 +112,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 40px 50px;
+    background-color: #131222;
 }
 
 
@@ -410,6 +411,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #131222;
 }
 
 .play-btn {
