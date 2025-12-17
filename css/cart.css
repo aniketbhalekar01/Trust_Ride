@@ -1,0 +1,13 @@
+
+/* text size for MOBILE VIEW */
+@media (max-width: 576px) {
+
+  .services h1 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  .car-slider img {
+    width: 220px !important;
+  }
+}

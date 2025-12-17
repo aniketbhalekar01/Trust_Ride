@@ -80,6 +80,7 @@
     100% { transform: translateX(-100%); }
 }
 
+
 /* card width for screens 768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -106,3 +107,15 @@
     }
 }
 
+/* text size for MOBILE VIEW */
+@media (max-width: 576px) {
+
+  .services h1 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  .car-slider img {
+    width: 220px !important;
+  }
+}
