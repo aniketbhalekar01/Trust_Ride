@@ -488,6 +488,13 @@ iframe {
    .footer-section .row>div {
     margin-bottom: 20px;
    }
+   .more-about-img,
+    .footer-section {
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
 }
 /* responsive for mobile */
 @media(max-width : 576px) {
@@ -535,12 +542,3 @@ iframe {
     }
    
 }   
-@media(max-width: 768px) {
-    .more-about-img,
-    .footer-section {
-        background-attachment: scroll !important;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-    }
-}
