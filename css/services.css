@@ -21,6 +21,21 @@ h1{
     font-size: 60px;
     font-weight: 700;
 }   
+@media (max-width: 576px) {
+    .car-image .services h1 {
+        font-size: 32px;      /* reduce text size */
+        line-height: 40px;    /* controls height */
+    }
+
+}
+@keyframes slider{
+    from {
+        right : -600px
+    } to {
+        right: 800px;
+    }
+}
+
 
 .cont{
     background-color:#FFB51D;
