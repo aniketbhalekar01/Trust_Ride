@@ -21,6 +21,22 @@ h1{
     font-size: 60px;
     font-weight: 700;
 }   
+@media (max-width: 576px) {
+    .car-image .services h1 {
+        font-size: 32px;      /* reduce text size */
+        line-height: 40px;    /* controls height */
+    }
+
+}
+
+@keyframes slider{
+    from {
+        right : -400px
+    } to {
+        right: 600px;
+    }
+}
+
 
 .cont{
     background-color:#FFB51D;
@@ -262,6 +278,26 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .car-slider img {
+    top: 10px;
+    height: 120px;        /* smaller car */
+    width: 55vw;          /* better fit */
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite; /* slower */
+  }
+}
+
+@keyframes drive-mobile {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+
 
 /* slider section */
 .slider {
@@ -298,6 +334,8 @@ body {
         right: 1650px;
     }
 }
+
+
 
 
 
