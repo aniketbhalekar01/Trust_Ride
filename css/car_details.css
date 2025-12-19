@@ -166,7 +166,7 @@
 
 @media (max-width: 576px) {
   .car-image {
-    height: 280px;
+    height: 350px;
   }
 
   .car-image .about h1 {
@@ -179,8 +179,9 @@
   }
 
   .car-slider img {
-    width: 65vw;
+    width: 50vw;
     min-width: 140px;
+    height: 170px;
   }
 }
 
