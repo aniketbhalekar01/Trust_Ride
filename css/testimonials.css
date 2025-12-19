@@ -15,7 +15,7 @@
 .testimonial-track {
     display: flex;
     gap: 20px;
-    animation: slideLeft 30s linear infinite;
+    animation: slideLeft 20s linear infinite;
 }
 
 /* individual card */
@@ -113,15 +113,17 @@
     }
 }
 
-/* text size for MOBILE VIEW */
+/* text size for MObile View */
 @media (max-width: 576px) {
 
   .services h1 {
-    font-size: 24px !important;
+    font-size: 35px !important;
     text-align: center;
   }
 
   .car-slider img {
+     /* height: 150px; */ 
     width: 220px !important;
+
   }
 }
