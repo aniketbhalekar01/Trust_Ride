@@ -31,7 +31,7 @@ h1{
 
 @keyframes slider{
     from {
-        right : -500px
+        right : -400px
     } to {
         right: 600px;
     }
