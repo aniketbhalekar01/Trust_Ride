@@ -28,11 +28,12 @@ h1{
     }
 
 }
+
 @keyframes slider{
     from {
-        right : -600px
+        right : -500px
     } to {
-        right: 800px;
+        right: 600px;
     }
 }
 
@@ -333,6 +334,9 @@ body {
         right: 1650px;
     }
 }
+
+
+
 
 
 
