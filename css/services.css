@@ -277,6 +277,26 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .car-slider img {
+    top: 10px;
+    height: 120px;        /* smaller car */
+    width: 55vw;          /* better fit */
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite; /* slower */
+  }
+}
+
+@keyframes drive-mobile {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+
 
 /* slider section */
 .slider {
