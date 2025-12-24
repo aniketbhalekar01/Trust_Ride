@@ -93,7 +93,6 @@
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   margin-top: 50px;
 }
 
@@ -147,7 +146,7 @@
 
 @media (max-width: 768px) {
   .car-image {
-    height: 320px;
+    height: 400px;
   }
 
   .car-image .about h1 {
@@ -167,7 +166,7 @@
 
 @media (max-width: 576px) {
   .car-image {
-    height: 350px;
+    height: 400px;
   }
 
   .car-image .about h1 {
@@ -698,5 +697,29 @@
 
   .footer-section>div>div {
     margin-bottom: 25px;
+  }
+}
+@media(max-width:576px) {
+  .car-image {
+    height: 70vh;
+    position: relative;
+    top: 70px;
+  }
+}
+@media (max-width: 576px) {
+  .car-slider img {
+    top: 25px;
+    height: 120px;        /* smaller car */
+    width: 55vw;          /* better fit */
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite; /* slower */
+  }
+}
+@keyframes drive-mobile {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 100%;
   }
 }

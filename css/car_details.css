@@ -166,7 +166,7 @@
 
 @media (max-width: 576px) {
   .car-image {
-    height: 350px;
+    height: 70vh;
   }
 
   .car-image .about h1 {
@@ -438,5 +438,10 @@
 
   .footer-section>div>div {
     margin-bottom: 25px;
+  }
+  .car-image {
+    position: relative;
+    top: 70px;
+    height: 70vh;
   }
 }

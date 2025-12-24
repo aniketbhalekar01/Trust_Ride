@@ -312,7 +312,15 @@
         right: 1650px;
     }
 }
-
+@media(max-width:576px) {
+    @keyframes slider {
+        from {
+            right: -350px;
+        } to {
+            right : 1350px;
+        }
+    }
+}
 .fun-facts {
     display: flex;
     padding: 30px 0px 0px 50px;
