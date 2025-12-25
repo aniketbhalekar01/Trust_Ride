@@ -136,6 +136,7 @@
   animation: drive 16s linear infinite;
 }
 
+
 @keyframes drive {
   from {
     left: 0;
@@ -185,12 +186,9 @@
     min-width: 140px;
     height: 170px;
   }
-  .car-image {
-  position: relative;
-  top: 70px;
-  height: 70vh;
+  
 }
-}
+
 
 /* car details section */
 
