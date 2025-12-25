@@ -81,6 +81,7 @@
   justify-content: center;
 }
 
+
 .car-image .about {
   text-align: center;
   padding: 20px;
@@ -88,7 +89,7 @@
   max-width: 600px;
 }
 
-.car-image .about h1  {
+.car-image .about h1 {
   color: white;
   font-size: 60px;
   font-weight: 700;
@@ -97,13 +98,14 @@
   margin-top: 50px;
 }
 
-.car-image .about  {
+.car-image .about {
   color: white;
   font-size: 21px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
-.car-image .about  a {
+
+.car-image .about a {
   text-decoration: none;
   color: white;
 }
@@ -166,7 +168,7 @@
 
 @media (max-width: 576px) {
   .car-image {
-    height: 350px;
+    height: 70vh;
   }
 
   .car-image .about h1 {
@@ -183,6 +185,11 @@
     min-width: 140px;
     height: 170px;
   }
+  .car-image {
+  position: relative;
+  top: 70px;
+  height: 70vh;
+}
 }
 
 /* car details section */
@@ -218,7 +225,8 @@
   object-fit: cover;
   border-radius: 10px;
 }
-.starting{
+
+.starting {
   text-align: center;
   border-radius: 10px;
 }
@@ -234,13 +242,14 @@
   border-radius: 12px;
   transition: 1s ease;
 }
-.details-btn:hover{
+
+.details-btn:hover {
   background-color: #000;
   color: white;
 }
 
 .icon-text {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6px;
@@ -250,16 +259,15 @@
 .icon-text span {
   font-size: 17px;
 }
-.icon-div{
+
+.icon-div {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   gap: 25px;
   flex-wrap: nowrap;
-  
-}
 
-/* footer section
+}
 .footer-section {
   background-image:
     linear-gradient(to right, #131222e1),
@@ -268,6 +276,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px 50px;
+  background-color: #131222;
 }
 
 
@@ -427,16 +436,26 @@
   color: #FFB51D;
 }
 
-@media(max-width:576px) {
-  .footer-section {
-    background-image:
-      linear-gradient(to right, #131222e1),
-      url("../images/bg-img5.jpg");
-    padding: 30px 15px;
-    height: auto;
+@media(min-width : 576px) and (max-width : 768px) {
+  .footer-section .row>div {
+    margin-bottom: 20px;
   }
 
-  .footer-section>div>div {
-    margin-bottom: 25px;
+  .more-about-img,
+  .footer-section {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
-} */
+}
+
+@media(max-width : 576px) {
+  .footer-section .row>div {
+    margin-bottom: 20px;
+  }
+
+  .footer-section {
+    padding-bottom: 0;
+  }
+}

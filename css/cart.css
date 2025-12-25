@@ -1,4 +1,9 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
 /* text size for MObile View */
 @media (max-width: 576px) {
 
@@ -9,5 +14,17 @@
 
   .car-slider img {
     width: 220px !important;
+  }
+}
+@media (max-width: 576px) {
+  .car-slider img {
+    top: 25px;
+    height: 120px;        /* smaller car */
+    width: 55vw;          /* better fit */
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite; /* slower */
+  }
+  .car-image {
+    height: 70vh;
   }
 }

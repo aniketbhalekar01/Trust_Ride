@@ -93,7 +93,6 @@
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   margin-top: 50px;
 }
 
@@ -147,7 +146,7 @@
 
 @media (max-width: 768px) {
   .car-image {
-    height: 320px;
+    height: 400px;
   }
 
   .car-image .about h1 {
@@ -167,7 +166,7 @@
 
 @media (max-width: 576px) {
   .car-image {
-    height: 350px;
+    height: 400px;
   }
 
   .car-image .about h1 {
@@ -182,7 +181,7 @@
   .car-slider img {
     width: 50vw;
     min-width: 140px;
-    height:170px;
+    height: 170px;
   }
 }
 
@@ -497,6 +496,7 @@
     margin-bottom: 10px;
   }
 }
+
 @media (max-width: 576px) {
   .rent-car {
     padding: 50px 15px;
@@ -519,7 +519,6 @@
   }
 }
 
-/* footer section
 .footer-section {
   background-image:
     linear-gradient(to right, #131222e1),
@@ -528,6 +527,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px 50px;
+  background-color: #131222;
 }
 
 
@@ -687,16 +687,54 @@
   color: #FFB51D;
 }
 
-@media(max-width:576px) {
-  .footer-section {
-    background-image:
-      linear-gradient(to right, #131222e1),
-      url("../images/bg-img5.jpg");
-    padding: 30px 15px;
-    height: auto;
+@media(min-width : 576px) and (max-width : 768px) {
+  .footer-section .row>div {
+    margin-bottom: 20px;
   }
 
-  .footer-section>div>div {
-    margin-bottom: 25px;
+  .more-about-img,
+  .footer-section {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
-} */
+}
+
+@media(max-width : 576px) {
+  .footer-section .row>div {
+    margin-bottom: 20px;
+  }
+
+  .footer-section {
+    padding-bottom: 0;
+  }
+}
+
+@media(max-width:576px) {
+  .car-image {
+    height: 70vh;
+    position: relative;
+    top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .car-slider img {
+    top: 25px;
+    height: 120px;
+    width: 55vw;
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite;
+  }
+}
+
+@keyframes drive-mobile {
+  from {
+    left: -60%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

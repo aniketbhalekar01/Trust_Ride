@@ -79,3 +79,23 @@ h3{
     margin: 0;
     
 }
+@media(max-width:576px) {
+    .car-image {
+        height: 70vh;
+    }
+    .car-slider img {
+    top: 25px;
+    height: 120px;        /* smaller car */
+    width: 55vw;          /* better fit */
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite; /* slower */
+  }
+}
+@keyframes drive-mobile {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 100%;
+  }
+}
