@@ -486,6 +486,7 @@ iframe {
     font-weight: 700;
 }
 
+
 /* responsive for tablets and large mobiles */
 @media(min-width : 576px) and (max-width : 768px) {
     .navbar {
