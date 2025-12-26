@@ -81,6 +81,7 @@
   justify-content: center;
 }
 
+
 .car-image .about {
   text-align: center;
   padding: 20px;
@@ -134,6 +135,7 @@
   animation: drive 16s linear infinite;
 }
 
+
 @keyframes drive {
   from {
     left: 0;
@@ -183,7 +185,9 @@
     min-width: 140px;
     height: 170px;
   }
+  
 }
+
 
 /* car details section */
 
@@ -262,7 +266,7 @@
 
 }
 
-/* footer section */
+
 .footer-section {
   background-image:
     linear-gradient(to right, #131222e1),
@@ -271,6 +275,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px 50px;
+  background-color: #131222;
 }
 
 
@@ -430,23 +435,32 @@
   color: #FFB51D;
 }
 
-@media(max-width:576px) {
-  .footer-section {
-    background-image:
-      linear-gradient(to right, #131222e1),
-      url("../images/bg-img5.jpg");
-    padding: 30px 15px;
-    height: auto;
+@media(min-width : 576px) and (max-width : 768px) {
+  .footer-section .row>div {
+    margin-bottom: 20px;
   }
 
-  .footer-section>div>div {
-    margin-bottom: 25px;
+  .more-about-img,
+  .footer-section {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   .car-image {
     position: relative;
     top: 70px;
     height: 70vh;
+}
+
+@media(max-width : 576px) {
+  .footer-section .row>div {
+    margin-bottom: 20px;
+  }
+
+  .footer-section {
+    padding-bottom: 0;
   }
 
   .car-slider img {
@@ -469,4 +483,5 @@
   to {
     left: 110%;
   }
+}
 }
