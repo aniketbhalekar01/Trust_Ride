@@ -185,7 +185,7 @@
     min-width: 140px;
     height: 170px;
   }
-  
+
 }
 
 
@@ -452,6 +452,7 @@
     position: relative;
     top: 70px;
     height: 70vh;
+  }
 }
 
 @media(max-width : 576px) {
@@ -476,12 +477,13 @@
   }
 
 }
+
 @keyframes drive-mobile {
   from {
     left: -60%;
   }
+
   to {
     left: 110%;
   }
-}
 }
