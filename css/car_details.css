@@ -88,22 +88,22 @@
   max-width: 600px;
 }
 
-.car-image .about h1  {
+.car-image .about h1 {
   color: white;
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   margin-top: 50px;
 }
 
-.car-image .about  {
+.car-image .about {
   color: white;
   font-size: 21px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
-.car-image .about  a {
+
+.car-image .about a {
   text-decoration: none;
   color: white;
 }
@@ -218,7 +218,8 @@
   object-fit: cover;
   border-radius: 10px;
 }
-.starting{
+
+.starting {
   text-align: center;
   border-radius: 10px;
 }
@@ -234,13 +235,14 @@
   border-radius: 12px;
   transition: 1s ease;
 }
-.details-btn:hover{
+
+.details-btn:hover {
   background-color: #000;
   color: white;
 }
 
 .icon-text {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6px;
@@ -250,13 +252,14 @@
 .icon-text span {
   font-size: 17px;
 }
-.icon-div{
+
+.icon-div {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   gap: 25px;
   flex-wrap: nowrap;
-  
+
 }
 
 /* footer section */
@@ -439,9 +442,31 @@
   .footer-section>div>div {
     margin-bottom: 25px;
   }
+
   .car-image {
     position: relative;
     top: 70px;
     height: 70vh;
+  }
+
+  .car-slider img {
+    top: 25px;
+    height: 120px;
+    /* smaller car */
+    width: 55vw;
+    /* better fit */
+    min-width: 140px;
+    animation: drive-mobile 15s linear infinite;
+    /* slower */
+
+  }
+
+}
+@keyframes drive-mobile {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 110%;
   }
 }
